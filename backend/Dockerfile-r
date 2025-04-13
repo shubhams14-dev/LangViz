@@ -1,0 +1,5 @@
+FROM r-base
+WORKDIR /app
+COPY . .
+RUN R -e "install.packages(c('ggplot2','plotly','plot3D'), repos='https://cran.r-project.org')"
+CMD ["Rscript", "visualization_code.r"]
