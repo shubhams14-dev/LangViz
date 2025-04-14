@@ -5,7 +5,12 @@ on:
     branches: [ main ]
     paths:
       - 'frontend/**'
-
+      
+permissions:
+  contents: write   # Required to push to gh-pages
+  pages: write
+  id-token: write
+  
 jobs:
   deploy:
     runs-on: ubuntu-latest
