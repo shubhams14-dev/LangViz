@@ -202,6 +202,66 @@ _Covers Python and R visualizations – static, interactive, and 3D._
 
 ---
 
+## 🛠️ GitHub Actions
+This project uses GitHub Actions to automate both backend testing and frontend deployment:
+
+✅ **Backend CI Workflow (docker-ci.yml)**
+
+-  Triggered on every push or pull request to the main branch.
+
+-  It performs the following tasks:
+
+-  Checks out the repository
+
+-  Sets up Docker Buildx for multi-platform build support
+
+-  Builds the backend Docker image using ./backend/Dockerfile
+
+-  Runs a Python test to verify static chart generation using Matplotlib
+
+-  Runs an R test to verify static chart generation using Rscript and plot()
+
+🚀 **Frontend Deployment Workflow (frontend-deploy.yml)**
+
+-  Triggered on every push to the main branch.
+
+-  It performs the following tasks:
+
+-  Checks out the repository
+
+-  Sets up Node.js (v18)
+
+-  Installs frontend dependencies using npm ci
+
+-  Builds the React frontend using npm run build
+
+-  Deploys the build folder (frontend/build) to GitHub Pages
+
+-  Deployment uses peaceiris/actions-gh-pages with your GITHUB_TOKEN for authentication.
+
+Once deployed, the site becomes available at:
+📍 https://shubhams14-dev.github.io/LangViz/
+
+---
+
+## ⚠️ Error Handling
+LangViz includes basic error handling to ensure smooth user experience and quick debugging:
+
+Invalid Language Selection:
+If a user selects one language (e.g., Python) but submits code written in a different language (e.g., R), the backend may fail to execute it correctly. In such cases:
+
+The app displays an alert message
+This is triggered on any failure in backend execution or visualization rendering.
+
+Silent Failures or Missing Plots:
+If the code does not generate or save a plot in the expected format (output/visualization.png), the frontend will not render any image, and a fallback alert is shown.
+
+Network or API Errors:
+If the backend is unreachable or there's a server error, the frontend catches it using try/catch in Axios and informs the user with a similar alert.
+
+Note: All errors are logged to the console (browser and server) to assist in debugging during development and testing.
+
+---
 ## 👨‍💻 Author
 
 **Shubham Sandip Salunke**  
