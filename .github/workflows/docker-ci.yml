@@ -3,8 +3,8 @@ name: LangViz CI
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    paths:
+      - 'backend/**'
 
 jobs:
   build-and-test:
