@@ -27,9 +27,19 @@ def execute():
 
     try:
         if lang == 'python':
-                subprocess.run(['/opt/anaconda3/bin/python', filename], check=True)
+                # subprocess.run(['python', filename], check=True)
+                subprocess.run(['python', filename], check=True)
         else:
+                #subprocess.run(['Rscript', filename], check=True)
+                # subprocess.run(['docker', 'exec', 'backend_r-backend_1', 'Rscript', filename], check=True)
+                # subprocess.run(['Rscript', filename], check=True)
+                # subprocess.run(['docker', 'exec', 'backend-r-backend-1', 'Rscript', f'/app/visualization_code/{filename}'], check=True)
+                # subprocess.run(['docker', 'compose', 'exec', '-T', 'r-backend', 'Rscript', f'/app/visualization_code/{filename}'], check=True)
                 subprocess.run(['Rscript', filename], check=True)
+
+
+
+
     except subprocess.CalledProcessError as e:
         return {'status': 'error', 'message': 'Code Execution Failed! Please check your code and selected language.'}, 400
 
@@ -44,4 +54,5 @@ def output_file(filename):
     return send_file(os.path.join('output', filename))
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(host='0.0.0.0', port=5000, debug=True)
+

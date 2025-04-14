@@ -5,7 +5,8 @@ function App() {
   const [code, setCode] = useState('');
   const [lang, setLang] = useState('python');
   const [img, setImg] = useState('');
-  const backendURL = 'http://127.0.0.1:5000';
+  const backendURL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:5050';
+
 
   const generate = async () => {
     if (!code.trim()) {

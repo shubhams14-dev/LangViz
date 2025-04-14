@@ -1,0 +1,30 @@
+
+version: '3'
+
+services:
+  backend:
+    build: .
+    ports:
+      - "5050:5000"
+    volumes:
+      - .:/app
+# version: '3.8'
+# services:
+#   python-backend:
+#     build:
+#       context: .
+#       dockerfile: Dockerfile-python
+#     volumes:
+#       - ./output:/app/output
+#       - ./visualization_code:/app/visualization_code
+#       - /var/run/docker.sock:/var/run/docker.sock
+#     ports:
+#       - "5050:5000"
+
+#   r-backend:
+#     build:
+#       context: .
+#       dockerfile: Dockerfile-r
+#     volumes:
+#       - ./output:/app/output
+#       - ./visualization_code:/app/visualization_code
