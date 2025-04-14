@@ -2,3 +2,6 @@ Flask
 flask-cors
 matplotlib
 plotly
+kaleido
+pandas
+plotly

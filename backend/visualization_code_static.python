@@ -1,0 +1,10 @@
+import matplotlib.pyplot as plt
+
+x = ['A', 'B', 'C', 'D']
+y = [10, 24, 36, 18]
+
+plt.bar(x, y, color='skyblue')
+plt.xlabel('Categories')
+plt.ylabel('Values')
+plt.title('Python Static - Bar Chart')
+plt.savefig('output/visualization.png')

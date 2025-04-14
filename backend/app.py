@@ -27,9 +27,9 @@ def execute():
 
     try:
         if lang == 'python':
-            subprocess.run(['python3', filename], check=True)
+                subprocess.run(['/opt/anaconda3/bin/python', filename], check=True)
         else:
-            subprocess.run(['Rscript', filename], check=True)
+                subprocess.run(['Rscript', filename], check=True)
     except subprocess.CalledProcessError as e:
         return {'status': 'error', 'message': 'Code Execution Failed! Please check your code and selected language.'}, 400
 
