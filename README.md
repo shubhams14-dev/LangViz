@@ -191,7 +191,8 @@ Command	Purpose
 
 ## 📺 Demo Recording
 
-📹 **[Screen Recording Link](#)**  
+📹 **[Screen Recording Link]**:  https://drive.google.com/file/d/1TXiAUfg1gbFY0DCuhuGPy0mU-7Qhs7S7/view?usp=sharing
+
 _Covers Python and R visualizations – static, interactive, and 3D._
 
 ---
