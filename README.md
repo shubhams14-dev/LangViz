@@ -21,6 +21,20 @@ This tool is ideal for learners, analysts, and educators who want a quick, brows
 
 ---
 
+## 📺 Demo Recording
+
+📹 **[Screen Recording Link]**:  https://drive.google.com/file/d/1TXiAUfg1gbFY0DCuhuGPy0mU-7Qhs7S7/view?usp=sharing
+
+_Covers Python and R visualizations – static, interactive, and 3D._
+
+---
+
+## 🌐 Live Demo
+
+🖥️ **Website**: [https://shubhams14-dev.github.io/LangViz/](https://shubhams14-dev.github.io/LangViz/)
+
+---
+
 ## 🧱 Tech Stack
 
 | Component  | Technology Used           |
@@ -186,20 +200,6 @@ Command	Purpose
 ![image](https://github.com/user-attachments/assets/fe642eb9-c546-4ce1-80cf-cf33c3fbdb19)
 
 
-
----
-
-## 📺 Demo Recording
-
-📹 **[Screen Recording Link]**:  https://drive.google.com/file/d/1TXiAUfg1gbFY0DCuhuGPy0mU-7Qhs7S7/view?usp=sharing
-
-_Covers Python and R visualizations – static, interactive, and 3D._
-
----
-
-## 🌐 Live Demo
-
-🖥️ **Website**: [https://shubhams14-dev.github.io/LangViz/](https://shubhams14-dev.github.io/LangViz/)
 
 ---
 
