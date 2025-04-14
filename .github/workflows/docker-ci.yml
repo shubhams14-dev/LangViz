@@ -18,7 +18,7 @@ jobs:
       uses: docker/setup-buildx-action@v2
 
     - name: Build Docker image
-      run: docker build -t langviz-backend .
+      run: docker build -t langviz-backend ./backend
 
     - name: Test Python Execution inside Container
       run: |
