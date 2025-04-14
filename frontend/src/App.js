@@ -5,7 +5,7 @@ function App() {
   const [code, setCode] = useState('');
   const [lang, setLang] = useState('python');
   const [img, setImg] = useState('');
-  const backendURL = process.env.REACT_APP_BACKEND_URL;
+  const process.env.REACT_APP_BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
 
   const generate = async () => {
@@ -15,8 +15,8 @@ function App() {
     }
 
     try {
-      await axios.post(`${backendURL}/execute`, { code, lang });
-      setImg(`${backendURL}/output/visualization.png?t=${Date.now()}`);
+      await axios.post(`${process.env.REACT_APP_BACKEND_URL}/execute`, { code, lang });
+      setImg(`${process.env.REACT_APP_BACKEND_URL}/output/visualization.png?t=${Date.now()}`);
     } catch (error) {
       if (error.response && error.response.data && error.response.data.message) {
         alert(error.response.data.message);
