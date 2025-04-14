@@ -132,13 +132,36 @@ Command	Purpose
 
 ### ✅ Python
 - Static: Bar chart using `matplotlib`
+
+  ![image](https://github.com/user-attachments/assets/80a08dce-6374-4f0c-93d9-6d3a443f4b07)
+
+
+
 - Interactive: Line chart using `plotly`
+
+  ![image](https://github.com/user-attachments/assets/b2724198-fc68-4f23-801c-5129df26d610)
+  
+
 - 3D: Surface plot using `plotly.graph_objects`
+
+  ![image](https://github.com/user-attachments/assets/3ae9453d-8e15-47de-9da9-6922238dd033)
+
 
 ### ✅ R
 - Static: Scatter plot using `ggplot2`
+
+  ![image](https://github.com/user-attachments/assets/730b40f2-d20c-4503-8f3e-58df0b2f6e7a)
+
+
 - Interactive: Line chart using `plotly`
+
+  ![image](https://github.com/user-attachments/assets/36f14e60-6e74-42a4-8ae4-63cd6c9931a7)
+
+
 - 3D: Surface plot using `plot3D`
+
+
+![image](https://github.com/user-attachments/assets/6da5b6fb-af39-4207-b546-2e84ec92a7bb)
 
 ---
 
