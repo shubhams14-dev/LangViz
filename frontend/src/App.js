@@ -5,7 +5,7 @@ function App() {
   const [code, setCode] = useState('');
   const [lang, setLang] = useState('python');
   const [img, setImg] = useState('');
-  const process.env.REACT_APP_BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+  // const process.env.REACT_APP_BACKEND_URL = backendURL;
 
 
   const generate = async () => {
